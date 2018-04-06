@@ -1,0 +1,20 @@
+{
+    "name": "motorphp/silexannotations",
+    "description": "Annotations library for silex",
+    "type": "library",
+    "license": "BSD-3",
+    "authors": [
+        {
+            "name": "Radu Helstern",
+            "email": "radu.helstern@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/annotations": "^1.6"
+    },
+    "autoload": {
+      "psr-4": {
+        "Motorphp\\SilexAnnotations\\": "src/main/php"
+      }
+    }
+}
