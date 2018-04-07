@@ -16,5 +16,16 @@
       "psr-4": {
         "Motorphp\\SilexAnnotations\\": "src/main/php"
       }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Motorphp\\SilexAnnotations\\": [
+                "src/main/php",
+                "src/test/php"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
     }
 }
