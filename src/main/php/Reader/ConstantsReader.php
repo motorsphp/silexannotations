@@ -1,6 +1,7 @@
 <?php namespace Motorphp\SilexAnnotations\Reader;
 
 use Doctrine\Common\Annotations\Annotation\Target;
+use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\Common\Annotations\DocParser;
 use Doctrine\Common\Annotations\Reader;
 
@@ -15,6 +16,13 @@ class ConstantsReader implements Reader
      * @var Reader
      */
     private $reader;
+
+    public static function instance(): ConstantsReader
+    {
+        $parser = new DocParser();
+        $reader = new AnnotationReader($parser);
+        return new ConstantsReader($parser, $reader);
+    }
 
     public function __construct(DocParser $parser, Reader $reader)
     {
