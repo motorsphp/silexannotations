@@ -13,5 +13,5 @@ class ControllerFactory
     /**
      * @var string
      */
-    public $containerKey;
+    public $service;
 }

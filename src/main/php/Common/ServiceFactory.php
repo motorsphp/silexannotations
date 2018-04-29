@@ -13,10 +13,5 @@ class ServiceFactory
     /**
      * @var string
      */
-    public $containerKey;
-
-    /**
-     * @var string
-     */
-    public $name;
+    public $service;
 }

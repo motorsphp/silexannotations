@@ -3,7 +3,7 @@
 use Doctrine\Common\Annotations\Annotation\Target;
 
 /**
- * Annotations used to denote a service factory
+ * Annotations used to configure a converter for request parameter
  *
  * @Annotation
  * @Target("METHOD")
@@ -13,5 +13,10 @@ class ParamConverter
     /**
      * @var string
      */
-    public $containerKey;
+    public $service;
+
+    /**
+     * @var string
+     */
+    public $operation;
 }
