@@ -3,12 +3,12 @@
 use Doctrine\Common\Annotations\Annotation\Target;
 
 /**
- * Annotations used to denote a service factory
+ * Annotation designating a class method as a view handler
  *
  * @Annotation
  * @Target("METHOD")
  */
-class ServiceFactory
+class ViewHandler
 {
     /**
      * @var string
@@ -18,5 +18,5 @@ class ServiceFactory
     /**
      * @var string
      */
-    public $provider;
+    public $operation;
 }

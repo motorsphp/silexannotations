@@ -8,15 +8,10 @@ use Doctrine\Common\Annotations\Annotation\Target;
  * @Annotation
  * @Target("METHOD")
  */
-class ServiceFactory
+class FactoryCapabilities
 {
     /**
      * @var string
      */
-    public $service;
-
-    /**
-     * @var string
-     */
-    public $provider;
+    public $firewall;
 }
